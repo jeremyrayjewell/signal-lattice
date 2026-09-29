@@ -11,7 +11,7 @@ Standing user instruction: use **CC BY-NC-SA** for subsequent works by E.C.H. wi
 - **Date visually inspected:** 2026-09-22.
 - **Evidence:** the artwork screenshot supplied directly in the conversation. Direct page access failed; a browser reached an OpenProcessing/Cloudflare block page. The alternative `/sketch/3010898` address also could not be accessed through the web reader.
 - **Exact license shown on the page:** **CC BY-NC-SA**, verified from the user's page-panel screenshot supplied on 2026-09-22. No version number is visible, so none is inferred. The panel identifies the work as `20260917`, subtitle `dailycoding - 20260917 / graphic`, created Thu, 9/17/2026 and updated Fri, 9/18/2026.
-- **Implementation status:** visual analysis and license-label verification completed before Scene I implementation. The independent 25-second study is now rendered; see [prototype-05-source-study.md](prototype-05-source-study.md) for differences, audio mappings, state values and outputs.
+- **Implementation status:** visual analysis and license-label verification completed before Scene I implementation. The independent 25-second study is now rendered; see [prototype-05r-study.md](prototype-05r-study.md) for differences, audio mappings, state values and outputs.
 - **Scene I name:** **Chromatic Veils**.
 
 ### Visible composition
@@ -38,7 +38,7 @@ On top of these veils, small opaque squares and short rectangular marks follow d
 
 ### Independent reinterpretation proposed
 
-Retain the relationship between large translucent color fields and sharp square trajectories, including the tension between curved interiors and straight cut boundaries. The initial study used a sparse macro layout; the subsequent source-grammar revision increases this to 18 broad, overlapping fan fields and three more coherent square trails for denser 16:9 coverage. Preserve a wider hue structure, smoky overlap and luminous regions instead of imposing the A–H palette or dark-channel composition. See [prototype-05r-revision.md](prototype-05r-revision.md) for the revision.
+Retain the relationship between large translucent color fields and sharp square trajectories, including the tension between curved interiors and straight cut boundaries. The initial study used a sparse macro layout; the subsequent source-grammar revision increases this to 18 broad, overlapping fan fields and three more coherent square trails for denser 16:9 coverage. Preserve a wider hue structure, smoky overlap and luminous regions instead of imposing the A–H palette or dark-channel composition. See [prototype-05r-study.md](prototype-05r-study.md) for the revision.
 
 Develop motion through changing field boundaries, overlap, local curvature and movement along independently defined trajectories. Keep the camera fixed. Geometry should remain active without music, while musical energy can influence overlap depth, curvature, trail articulation and short-lived disturbances. Exact mappings and calm/active/extreme values will be specified with the independent implementation, not guessed before it exists.
 
@@ -60,7 +60,7 @@ The user supplied both source text and the artwork screenshot after direct acces
 - **Evidence:** user-supplied artwork screenshot. Source text was also supplied in the conversation, but was not saved into the repository, executed, copied or ported.
 - **Exact displayed license:** **CC BY-NC-SA**, confirmed by the user's page-panel screenshot. No version number is visible. The panel shows title `20260920` and creation/update dates Sun, 9/20/2026.
 - **Status:** visual analysis, source URL and license recorded before implementation. The independent 25-second Scene J study is rendered and ready for review.
-- **Scene J name:** **Neon Faultlines**. Independent implementation and mappings are documented in [prototype-06-source-study.md](prototype-06-source-study.md).
+- **Scene J name:** **Neon Faultlines**. Independent implementation and mappings are documented in [prototype-06r-study.md](prototype-06r-study.md).
 
 ### Visible composition and distinctive grammar
 
@@ -91,7 +91,7 @@ Do not copy the supplied implementation, its functions, exact palette array, sub
 
 ## E.C.H. - dailycoding 20260912 / graphic
 
-User-supplied screenshot and source header; URL not supplied. CC BY-NC-SA recorded under the user's standing instruction. Inspected 2026-09-22. Source code was visible in conversation but was not copied into the project. Visual analysis and independent implementation details: [Scene K - Gestural Dials](prototype-07-study.md).
+User-supplied screenshot and source header; URL not supplied. CC BY-NC-SA recorded under the user's standing instruction. Inspected 2026-09-22. Source code was visible in conversation but was not copied into the project. Visual analysis and independent implementation details: [Scene K - Gestural Dials](prototype-07r-study.md).
 
 ## E.C.H. - dailycoding 20260825 / graphic
 
@@ -103,7 +103,7 @@ User-supplied screenshot inspected 2026-09-22. URL not supplied. CC BY-NC-SA rec
 
 ## E.C.H. - dailycoding 20260910 / graphic
 
-User-supplied screenshot inspected 2026-09-22. URL not supplied. CC BY-NC-SA recorded under the standing instruction. Source code was visible in conversation but not copied, executed or stored. Analysis and independent implementation: [Scene N - Neon Meridians](prototype-12-study.md).
+User-supplied screenshot inspected 2026-09-22. URL not supplied. CC BY-NC-SA recorded under the standing instruction. Source code was visible in conversation but not copied, executed or stored. Analysis and independent implementation: [Scene N - Neon Meridians](prototype-12t-study.md).
 
 ## OP-2919966 — dailycoding 20260418
 

@@ -1,4 +1,4 @@
-"""Full-track analysis using the existing gummy-video feature extraction approach."""
+"""Full-track audio feature extraction: RMS, band power, onsets, and beat tracking."""
 import argparse
 import hashlib
 import json

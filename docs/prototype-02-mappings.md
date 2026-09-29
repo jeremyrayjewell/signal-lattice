@@ -20,7 +20,7 @@ Initial analysis stalled while Numba probed the protected Python installation fo
 
 ## Analysis and master time
 
-The complete 495-second source is analyzed before choosing a 25-second excerpt. The source file is read only. The method follows the previously reviewed gummy-video implementation: RMS, STFT band power, onset strength, beat tracking, 99th-percentile normalization, and interpolation at actual timestamps. Analysis uses mono 22050 Hz, FFT size 2048, hop 512; audio for the video retains the source sample rate and channels until AAC encoding. The analysis resampling does not affect mux audio quality.
+The complete 495-second source is analyzed before choosing a 25-second excerpt. The source file is read only. The method uses RMS, STFT band power, onset strength, beat tracking, 99th-percentile normalization, and interpolation at actual timestamps. Analysis uses mono 22050 Hz, FFT size 2048, hop 512; audio for the video retains the source sample rate and channels until AAC encoding. The analysis resampling does not affect mux audio quality.
 
 Features: RMS; bass 20–180 Hz; mids 180–2000 Hz; highs 2000–11025 Hz; onset strength; detected transient times/strengths; spectral centroid; estimated beat times/BPM. Beat estimates are recorded but do not impose a metrical grid on the visuals. Transients use normalized onset height >=0.20, prominence >=0.12 and minimum separation 8/60 seconds.
 

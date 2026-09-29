@@ -2,24 +2,15 @@
 
 Status: Prototype-02 implemented and rendered using the user-selected track. See [prototype-02-mappings.md](prototype-02-mappings.md) for the selected interval, final mappings, reproduction steps and verification results. Prototype-01 source and artifacts remain unchanged. The review below records the integration decisions made before implementation.
 
-## Relevant implementations inspected
+## Approach
 
-- `D:/git/softbodyvideogen/gummy-video/src/audio_analysis.py`
-- `D:/git/citypromisevid/ps2ambientvideo/audio.py`
-- `D:/git/citypromisevid/ps2ambientvideo/softbodies_engine/audio_analysis.py` (same analysis approach as gummy-video)
-- Timing/audio-mux references only in `D:/git/softbodyvideogen/gummy-video/src/render_video.py`.
+librosa RMS, a 2048-sample STFT with a 512-sample hop, mean power in bass (20–180 Hz), mid (180–2000 Hz), and high (2000 Hz upward) bands, onset strength, and beat tracking. Each continuous signal is normalized using its 99th percentile and clipped to [0, 1]. Features have explicit analysis timestamps and are linearly interpolated at requested track time. NPZ caching avoids repeated analysis.
 
-No Blender or scene implementation was imported or modified.
-
-## Reusable methods
-
-The gummy-video implementation uses librosa RMS, a 2048-sample STFT with a 512-sample hop, mean power in bass (20–180 Hz), mid (180–2000 Hz), and high (2000 Hz upward) bands, onset strength, and beat tracking. Each continuous signal is normalized using its 99th percentile and clipped to [0, 1]. Features have explicit analysis timestamps and are linearly interpolated at requested track time. NPZ caching avoids repeated analysis.
-
-The citypromise implementation also provides band analysis, onset and beat curves, smoothing, and excerpt start-time handling. Its normalized-index resampling should not be used for synchronization: actual timestamps will preserve the analysis hop timing. Its excerpt repetition and synthetic fallbacks are inappropriate for the requested real-track deliverable.
+Normalized-index resampling should not be used for synchronization: actual timestamps preserve the analysis hop timing. Excerpt repetition and synthetic fallbacks are inappropriate for a real-track deliverable.
 
 ## Integration decisions for the next implementation
 
-- Reuse the established feature extraction and percentile normalization methods inside Signal Lattice.
+- Use the feature extraction and percentile normalization approach above inside Signal Lattice.
 - Missing/unreadable audio must produce an error, never substitute synthetic music features.
 - Use `trackTime = excerptStart + frame / 30` for both autonomous animation and feature lookup. Trim the actual audio to exactly the same start and duration for muxing.
 - Compute immediate and smoothed controls, attack/release envelopes, and transient decay across the source timeline before selecting the excerpt. This preserves musical history at its beginning and permits arbitrary frame order.
