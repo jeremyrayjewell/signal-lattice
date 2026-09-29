@@ -1,0 +1,29 @@
+{
+  "name": "signal-lattice",
+  "version": "0.1.0",
+  "description": "An audio-reactive, procedurally generated music video built from independently authored p5.js scenes.",
+  "license": "CC-BY-NC-SA-4.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "render": "node scripts/render-video.mjs",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "p5": "1.11.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "playwright": "1.55.1",
+    "prettier": "^3.9.9",
+    "vite": "6.4.3"
+  }
+}

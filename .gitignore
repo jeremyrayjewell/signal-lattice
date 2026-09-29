@@ -1,0 +1,10 @@
+node_modules/
+dist/
+renders/
+
+# Derived from a personal source track (see README for how to supply your own).
+assets/audio/
+assets/analysis/
+
+# Ad hoc local unit tests from early prototypes, superseded by each render script's own checks.
+scripts/test-*.mjs
