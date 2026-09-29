@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal Lattice — prototype 01</title>
+    <link rel="icon" href="data:," />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #101a1e;
+        color: #ede6d4;
+        font: 13px monospace;
+        display: grid;
+        justify-items: center;
+        gap: 12px;
+        padding: 18px;
+      }
+      header,
+      footer {
+        width: min(540px, 95vw);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h1 {
+        font-size: 15px;
+        letter-spacing: 0.12em;
+      }
+      canvas {
+        display: block;
+        max-height: 82vh;
+        max-width: 95vw;
+        width: auto !important;
+        height: auto !important;
+        aspect-ratio: 9 / 16;
+      }
+      button {
+        background: transparent;
+        color: inherit;
+        border: 1px solid #647d7c;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SIGNAL LATTICE</h1>
+      <span>STUDY / 001</span>
+    </header>
+    <main id="canvas"></main>
+    <footer><button id="toggle">Pause</button><span id="position">FRAME 00000</span></footer>
+    <script type="module" src="/src/sketch.js"></script>
+  </body>
+</html>
