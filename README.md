@@ -2,6 +2,8 @@
 
 ![Signal Lattice preview](docs/media/preview.gif)
 
+By [aggregatron](https://codeberg.org/aggregatron) ([GitHub: jeremyrayjewell](https://github.com/jeremyrayjewell))
+
 An audio-reactive, procedurally generated music video. Every scene is a
 p5.js sketch driven by real analysis of a source track (onsets, RMS, band
 energy, beat tracking) and assembled into an 8-segment, full-track video
