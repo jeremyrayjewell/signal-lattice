@@ -1,6 +1,8 @@
 node_modules/
 dist/
 renders/
+__pycache__/
+*.pyc
 
 # Derived from a personal source track (see README for how to supply your own).
 assets/audio/
